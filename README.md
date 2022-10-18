@@ -9,4 +9,6 @@ Roza has a completed panel for demographic information and now needs to visualiz
 • Software program: visual Studio Code
 
 ## Results:
-Created a bar chart, bubble chart and a gauge chart for visualization
+Created a bar chart, bubble chart and a gauge chart for visualization in webpage
+ https://shaobobei.github.io/Improbable_Beef/
+
