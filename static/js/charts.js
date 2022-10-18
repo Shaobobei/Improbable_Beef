@@ -1,4 +1,3 @@
-
 function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
@@ -95,7 +94,7 @@ function buildCharts(sample) {
 
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: {text: "Top 10 Bacteria Culture Found"},
+      title: "Top 10 Bacteria Culture Found",
       margin: { t: 100, l: 100 }
     };
 
@@ -120,13 +119,15 @@ function buildCharts(sample) {
   ];
 
     // 2. Create the layout for the bubble chart.
-      var bubbleLayout = {
-        title: "Bacterica Chart Per Sample",
-
+      var bubbleLayout = 
+      {
+        title: "Bacteria Chart Per Sample",
+        margin: { t: 30},
         hovermode: "closest",
         xaxis: { title: "OTU ID" },
-        margin: { t: 50}
-      }
+        margin: { l: 50}
+      };
+
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
@@ -174,8 +175,8 @@ function buildCharts(sample) {
     ];
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      title: {text: "Belly Button Washing Frequency"},
-      margin: { t: 50, l: 25,},  
+      title: "Belly Button Washing Frequency",
+      margin: { t: 25, l: 25,},  
       };
     // 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", gaugeData, gaugeLayout);
